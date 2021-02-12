@@ -1,0 +1,30 @@
+            <Box component="div" className={mergeClasses.mainContainer}>
+                <Grid container justify="center">
+                    {/* start one project */}
+                    <Grid item xs={12} sm={4}>
+                        <Card className={classes.cardContainer} onClick={OnClickOpen}>
+                            <CardActionArea /* href='/collection' */>
+                                <CardMedia component="img" alt="Collection"
+                                    height="500" image={pic} />
+                            </CardActionArea>
+                        </Card>
+                    </Grid>
+                    {/* end one project */}
+                    <Grid item xs={12} sm={4}>
+                        <Card className={classes.cardContainer}>
+                            <CardActionArea href='/cv'>
+                                <CardMedia component="img" alt="CV"
+                                    height="500" image={jay} />
+                            </CardActionArea>
+                        </Card>
+                    </Grid>
+                    <Grid item xs={12} sm={4}>
+                        <Card className={classes.cardContainer}>
+                            <CardActionArea href='/exhibition'>
+                                <CardMedia component="img" alt="Exhibition"
+                                    height="500" image={pic} />
+                            </CardActionArea>
+                        </Card>
+                    </Grid>
+                </Grid>
+            </Box>
